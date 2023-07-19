@@ -1,0 +1,79 @@
+body{
+    background-color:  rgba(110, 238, 174, 0.09);
+}
+.navbar ul{
+    list-style-type: none;
+    margin: 0px;
+    width: auto;
+    overflow: hidden;
+    background-color: #11c591;
+    border-radius: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: linear;
+    transition-duration: 100ms;
+}
+.navbar li{
+    display: block;
+    float: right;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    border-right: 1px #11c591;
+}
+.navbar #box:hover{
+    color: white;
+}
+.navbar #top-name{
+    float: left;
+}
+.hero{
+    padding-top: 280px; 
+}
+#profile-img{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -150px;
+    display: block;
+    position: relative;
+    border-radius: 100px;
+}
+.contact{
+    text-align: center;
+    background-color: #11c591;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-style: solid;
+    transition: linear;
+    transition-duration: 100ms;
+    border-radius: 20px;
+    margin: 0;
+    position: absolute;
+    margin-top: 80px;
+    top: 80%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+#name{
+    text-align: center; 
+    font-size: 45px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: linear;
+    transition-duration: 100ms;
+}
+#bio{
+    text-align: center;
+    transition: linear;
+    transition-duration: 100ms;
+}
+.projects,h3,img,p{
+    transition: linear;
+    transition-duration: 100ms;
+}
+.services,h3,img,p{
+    transition: linear;
+    transition-duration: 100ms;
+}
