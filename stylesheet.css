@@ -1,6 +1,9 @@
 body{
     background-color:  rgba(110, 238, 174, 0.09);
 }
+p{
+    font-size: 15px;
+}
 .navbar ul{
     list-style-type: none;
     margin: 0px;
@@ -13,7 +16,7 @@ body{
     transition-duration: 100ms;
 }
 .navbar li{
-    display: block;
+    display: flex;
     float: right;
     padding: 10px;
     padding-top: 20px;
@@ -34,7 +37,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     margin-top: -150px;
-    display: block;
+    display: flex;
     position: relative;
     border-radius: 100px;
 }
@@ -69,11 +72,31 @@ body{
     transition: linear;
     transition-duration: 100ms;
 }
-.projects,h3,img,p{
+.projects.img{
     transition: linear;
     transition-duration: 100ms;
+    display: flex;
 }
-.services,h3,img,p{
+.services.img{
+    transition: linear;
+    transition-duration: 100ms;
+    display: flex;
+}
+.about.img{
+    display: flex;
+}
+@media (max-width: 480px){
+    .projects.img,.services.img,.about.img{
+        flex-direction: column;
+    }
+    .navbar li{
+        flex-direction: column;
+    }
+    body,p,h1{
+        text-align: center;
+    }
+}
+h3,p{
     transition: linear;
     transition-duration: 100ms;
 }
