@@ -1,102 +1,298 @@
 body{
-    background-color:  rgba(110, 238, 174, 0.09);
+    background-color: #e5e4e0;
 }
-p{
-    font-size: 15px;
-}
-.navbar ul{
-    list-style-type: none;
-    margin: 0px;
-    width: auto;
-    overflow: hidden;
-    background-color: #11c591;
-    border-radius: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    transition: linear;
-    transition-duration: 100ms;
-}
-.navbar li{
+
+.navbar{
     display: flex;
-    float: right;
-    padding: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 30px;
-    border-right: 1px #11c591;
-}
-.navbar #box:hover{
-    color: white;
-}
-.navbar #top-name{
-    float: left;
-}
-.hero{
-    padding-top: 280px; 
-}
-#profile-img{
+    width: 90vw;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -150px;
-    display: flex;
-    position: relative;
-    border-radius: 100px;
+    margin-top: 3vh;
+    padding: 2vh 2vw;
 }
-.contact{
+#logo,nav{
+    display: flex;
+
+}
+nav{
+    display: flex;
+    width: 80vw;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 7vw;
+}
+#navelements a{
+    margin-left: 3vw;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #4b331c;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#logo{
+    display: flex;
+    width: 50vw;
+    margin-left: 7vw;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.8rem;
+    color: #4b331c;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#profile,.herotext{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+.herotext{
+    margin-bottom: 0vh;
+}
+#profile{
+    display: flex;
+    margin: 8vh 0vw 0vh 11vw;
+    border: 1px solid black;
+}
+.herotext h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 20vh 20vw 0vh 10vw;
+    font-size: 3rem;
+}
+#gotobtn{
+    padding: 2vh 4vw 2vh 4vw;
+    margin: 3vh 0vw 0vh 0vw;
+    border-radius: 50px;
+    border: 1px solid white;
+    color: white;
+    background-color: #bea388;
+    font-size: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#gotobtn a{
+    text-decoration: none;
+    color: white;
+}
+#gotobtn:hover{
+    cursor: pointer;
+    opacity: 80%;
+}
+@media only screen and (max-width: 600px) {
+ .navbar{
+    display: flex;
+    flex-direction: column;
+    width:80vw;
+    justify-content: center;
+    align-items: center;
+ } 
+ nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+ }  
+ #logo{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: center;
+    margin: 5vh 0vw 2vh 0vw;
+    color: #4b331c;
+ }
+ #navelements a{
+    margin: 0vh 0vw 2vh 0vw;
+    font-weight: 400;
+    text-decoration: none;
+    color: #4b331c;
+ }
+ .herotext{
+    display: flex;
+    flex-direction: column;
+    margin: 2vh;
+
+ }
+ #profile{
+    height:50vh;
+    width: 70vw;
+    justify-content: center;
+    margin-top: 0vh;
+ }   
+ .herotext h1{
+    margin: 9vh 0vw 0vh 0vw;
     text-align: center;
-    background-color: #11c591;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-style: solid;
-    transition: linear;
-    transition-duration: 100ms;
-    border-radius: 20px;
-    margin: 0;
-    position: absolute;
-    margin-top: 80px;
-    top: 80%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+ }
+ #gotobtn:hover{
+    cursor: pointer;
+    opacity: 80%;
+ }
+ .secondpage .about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ .secondpage .experience{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ .project .portfolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ .project .portfolio #p1{
+    margin-bottom: 10vh;
+ }
+ #pimg{
+    height: 40vh;
+    width: 50vw;
+ }
+ .service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ .footer .navigation a{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 5vh 5vw 5vh 5vw;
 }
-#name{
-    text-align: center; 
-    font-size: 45px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    transition: linear;
-    transition-duration: 100ms;
+
 }
-#bio{
+.secondpage{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15vh;
+    border-radius: 25px;
+}
+.about{
+    display: flex;
+    flex-direction: row;
+    padding: 10vh 5vw 5vh 5vw;
+    
+}
+.about #title1{
+    font-size: 2rem;
     text-align: center;
-    transition: linear;
-    transition-duration: 100ms;
+    width: fit-content;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-content: center;
 }
-.projects.img{
-    transition: linear;
-    transition-duration: 100ms;
+.about #content1{
+    font-size: 1.5rem;
+    text-align: center;
+    width: fit-content;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:400 ;
+    align-content: center;
+}
+.experience{
     display: flex;
+    flex-direction: row;
+    padding: 10vh 5vw 5vh 5vw;
+    
 }
-.services.img{
-    transition: linear;
-    transition-duration: 100ms;
+.experience #title2{
+    font-size: 2rem;
+    text-align: center;
+    width: fit-content;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-content: center;
+}
+.experience #content2{
+    font-size: 1.5rem;
+    text-align: center;
+    width: fit-content;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:400 ;
+    align-content: center;
+}
+.portfolio{
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin: 10vh 10vw 10vh 10vw;
 }
-.about.img{
+.portfolio img{
+    margin: 1vh 1vw 1vh 1vw;
+}
+.project{
+    margin-top: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+    padding: 10vh 5vw 5vh 5vw;
+    background-color: white;
+    border-radius: 25px;
+}
+.project h5{
+    margin: 5vh 0vw 5vh 0vw;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
+    justify-content: center;
 }
-@media (max-width: 480px){
-    .projects.img,.services.img,.about.img{
-        flex-direction: column;
-    }
-    .navbar li{
-        flex-direction: column;
-    }
-    body,p,h1{
-        text-align: center;
-    }
+.service{
+    width: 50vw;
+    margin: 20vh 0vw 10vh 5vw;    
 }
-h3,p{
-    transition: linear;
-    transition-duration: 100ms;
+.service h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+.service button{
+    padding: 2vh 4vw 2vh 4vw;
+    border-radius: 50px;
+    border: 1px solid white;
+    color: white;
+    background-color: #bea388;
+    font-size: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.service button:hover{
+    cursor: pointer;
+    opacity: 80%;
+}
+.footer{
+    display: flex;
+    width: 90vw;
+}
+.details{
+    margin: 10vh 0vw 5vh 5vw;
+}
+.details,h5,p{
+    margin-left: 3vw;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #4b331c;
+}
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navigation a{
+    display: flex;
+    margin-left: 3vw;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #4b331c;
+    margin-left: 2vw;
 }
