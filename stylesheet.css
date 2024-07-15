@@ -150,6 +150,7 @@ nav{
  #pimg{
     height: 40vh;
     width: 50vw;
+    border-radius: 25px;
  }
  .service{
     display: flex;
@@ -227,6 +228,7 @@ nav{
 }
 .portfolio img{
     margin: 1vh 1vw 1vh 1vw;
+    border-radius: 25px;
 }
 .project{
     margin-top: 20vh;
