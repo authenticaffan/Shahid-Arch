@@ -1,0 +1,350 @@
+.home{
+    height: 98vh;
+    background-color: #dcbaad;
+}
+.navbar{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.navid{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo a{
+    text-decoration: none;
+    margin: 40px;
+    font-size: 25px;
+    /* font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    color: black;
+    font-weight: bold;
+}
+.navid ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 50px;
+    margin: 40px;
+    font-size: 20px;
+}
+li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    
+}
+#cbtn{
+    padding: 15px;
+    align-items: center;
+    border: 0.5px solid black;
+}
+.hero{
+    display: grid;
+    grid-template-columns: 40% 40%;
+}
+.herotext{
+    margin: 50px;
+    height: 40vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.hero h1{
+    font-size: 50px;
+}
+.cta{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: flex-start;
+    justify-content: center;
+}
+.cta button{
+    padding: 20px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+.cta button a{
+    text-decoration: none;
+    color: white;
+}
+.aboutsec{
+    display: flex;
+    width: auto;
+    height: 80vh;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10vw;
+    margin-left: 3vw;
+}
+.profpic img{
+    height: auto;
+    width: 30vw;
+}
+.details h2{
+    font-size: 40px;
+}
+.details{
+    width: 40vw;
+}
+.counts{
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+.projects{
+    margin-top: 10vh;
+}
+.projectsec{
+    background-color: rgb(43, 106, 232);
+    color: white;
+    height: 80vh;
+}
+.projecttext{
+    display: flex;
+    width: auto;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10vw;
+    margin-left: 3vw;
+}
+.projecttext h1{
+    font-size: 40px;
+}
+.project{
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    margin-left: 3vw;
+    gap: 10px;
+}
+.project .item{
+    background-color: white;
+    border: 1px solid white;
+    height: 50vh;
+    color: black;
+}
+.item img{
+    width: 100%;
+    height: auto;   
+} 
+.item h2,p{
+    margin-left: 10px;
+}
+.contactsec{
+    background-color: #dcbaad;
+    height: 70vh;
+    width: 60vw;
+    margin-top: 15vh;
+    display: grid;
+    grid-template-columns: 30% 30%;
+    align-items: center;
+    gap: 30vw;
+    
+}
+.form h1{
+    font-size: 40px;
+    width: 40vw;
+    
+}
+.form{
+    margin-left: 30px;
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+form input{
+    padding: 2vh 9vw 2vh 1vh;
+    border: 0.5px solid black;
+    color: white;
+    border-radius: 10px;
+}
+form textarea{
+    border: 0.5px solid black;
+    border-radius: 10px;
+}
+form button{
+    padding: 15px 25px 15px 25px;
+    border: 0.5px solid black;
+    background-color: #000000;
+    color: white;
+    border-radius: 10px;
+}
+.footerimg{
+    margin-top: 10vh ;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(206, 221, 253);
+}
+.footersec{
+    margin: 10vh 0vw 10vh 30px ;
+    width: auto;
+}
+.foot{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10vw;
+}
+.links ul{
+    list-style-type: none;
+
+}
+.socials img{
+    height: 40px;
+    width: auto;
+}
+.socials{
+    display: flex;
+    gap: 2vw;
+    justify-content: flex-end;
+    align-items: center;
+}
+@media (max-width: 480px){
+    .navid{
+        width: 96vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .navid .logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .navid ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .hero{
+        display: flex;
+        flex-direction: column;
+    }
+    .cover > img{
+        margin-top: 5vh;
+        margin-bottom: 15vh;
+        height: auto;
+        width: 320px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40vh;
+    }
+    .home{
+        height: 137vh;
+        width: 96vw;
+    }
+    .hero h1{
+        font-size: 30px;
+    }
+    .cta button{
+        padding: 10px;
+    }
+    .aboutsec{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5vh;
+    }
+    .details h2{
+        font-size: 20px
+    }
+    .details{
+        margin-bottom: 15vh;
+        width: 60vw;
+    }
+    .projecttext{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .projecttext h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    .projecttext p{
+        text-align: center;
+    }
+    body{
+        width: 96vw;
+    }
+    .project{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 7vh;
+    }
+    .projectsec{
+        background-color: rgb(43, 106, 232);
+        color: white;
+        height: 200vh;
+    }
+    .project .item{
+        background-color: white;
+        border: 1px solid white;
+        height: 50vh;
+        width: 70%;
+        color: black;
+    }
+    .item img{
+        width: 100%;
+        height: auto;   
+    } 
+    .contactsec{
+        background-color: #dcbaad;
+        height: 70vh;
+        width: 70vw;
+        margin-top: 15vh;
+        display: grid;
+        grid-template-columns: 30% 30%;
+        align-items: center;
+        gap: 30vw;
+        justify-content: center;
+        
+    }
+    .form h1{
+        font-size: 20px;
+    }
+    form input{
+        padding: 2vh 1vw 2vh 0vw;
+    }
+    form textarea{
+        width: 50vw;
+    }
+    .footerimg img{
+        display: none;
+    }
+    .contact{
+        display: flex;
+        justify-content: center;
+    }
+    .foot{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .foot .socials{
+        margin-bottom: 30px;
+    }
+}
