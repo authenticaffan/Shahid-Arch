@@ -4,19 +4,19 @@ const projects = [
   {
     id: 1,
     title: "Modern Residence",
-    image: "src/assets/modern.jpg",
+    image: "/assets/modern.jpg",
     description: "A contemporary home design with clean lines and open spaces.",
   },
   {
     id: 2,
     title: "Urban Office Complex",
-    image: "src/assets/urban.jpg",
+    image: "/assets/urban.jpg",
     description: "A sustainable office building in the heart of the city.",
   },
   {
     id: 3,
     title: "Eco-Friendly School",
-    image: "src/assets/eco.jpeg",
+    image: "/assets/eco.jpeg",
     description: "An innovative educational facility with a focus on sustainability.",
   },
 ];

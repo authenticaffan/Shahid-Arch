@@ -29,7 +29,7 @@ export function About() {
             {/* Image Section */}
             <div className="relative h-[400px] md:h-[500px]">
               <img
-                src="src/assets/profile.png?height=500&width=500"
+                src="public/assets/profile.png?height=500&width=500"
                 alt="Architect Name"
                 className="rounded-lg shadow-lg object-cover w-full h-full"
               />

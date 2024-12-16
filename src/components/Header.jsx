@@ -16,13 +16,13 @@ export function Header() {
         {/* Logo */}
         <div className="flex items-center space-x-4">
           <img
-            src="/src/assets/profile.png?height=40&width=40"
+            src="/assets/profile.png?height=40&width=40"
             alt="Architect Name"
             width={40}
             height={40}
             className="rounded-full"
           />
-          <span className="text-xl font-bold text-gray-800">Shahid Arch</span>
+          <span className="text-xl font-bold text-gray-800"><a href="/">Shahid Arch</a></span>
         </div>
 
         {/* Desktop Navigation */}

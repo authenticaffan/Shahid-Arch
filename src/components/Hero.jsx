@@ -2,7 +2,7 @@ export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center">
       <img
-        src="/src/assets/placeholder.jpg"
+        src="/assets/placeholder.jpg"
         alt="Featured architectural project"
         className="absolute inset-0 w-full h-full object-cover z-0"
       />
